@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Преподаватели LearnHub | Эксперты из IT-компаний с опытом от 5 лет</title>
+    <meta name="description" content="Преподаватели школы LearnHub — практикующие специалисты с опытом от 5 лет в ведущих IT-компаниях. Они делятся реальными кейсами и готовят вас к работе в индустрии. Посмотрите портфолио каждого эксперта.">
+    <meta name="keywords" content="преподаватели курсов программирования, эксперты it курсов, наставники data science, учителя python, преподаватели веб разработки, smm специалисты преподаватели, дизайнеры преподаватели, ai эксперты">
+
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <style>
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .tutors-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+        .tutor-card {
+            background: #ffffff;
+            flex: 1 1 280px;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .tutor-card:hover {
+            transform: translateY(-5px);
+        }
+        .tutor-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .tutor-card h3 {
+            margin: 0;
+            color: var(--accent-dark);
+            font-size: 20px;
+        }
+        .tutor-card .specialty {
+            font-weight: 600;
+            color: var(--accent2);
+            margin: 5px 0;
+        }
+        .tutor-card p {
+            color: var(--text);
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 480px) {
+            main { padding: 0 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="main.html" style="text-decoration: none; color: white; display: flex; align-items: center; gap: 10px; justify-content: center;">
+        <img src="pictures/logo.png" alt="Logo" style="width: 32px; height: 32px;">LearnHub</a>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="couses.html">Каталог курсов</a></li>
+        <li><a href="tutor.html">Преподаватели</a></li>
+        <li><a href="reviews.html">Отзывы</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div class="block-text">
+        <h1>Преподаватели практики</h1>
+        <p>Учись у тех, кто делает IT сегодня. Наставники — действующие специалисты из ведущих компаний.</p>
+    </div>
+    <div class="tutors-container">
+        <div class="tutor-card">
+            <img src="pictures/pic1.jpg" alt="Иван Иванов">
+            <h3>Алексей</h3>
+            <div class="specialty">Веб-разработка</div>
+            <p>Опытный веб-разработчик с 8-летним стажем. Помог студентам создавать реальные проекты и освоить HTML, CSS и JavaScript.</p>
+        </div>
+        <div class="tutor-card">
+            <img src="pictures/pic2.jpg" alt="Анна Петрова">
+            <h3>Наталья</h3>
+            <div class="specialty">Python и Data Science</div>
+            <p>Эксперт по Python и анализу данных. Преподает Python с нуля, работу с библиотеками и практические проекты для начинающих.</p>
+        </div>
+        <div class="tutor-card">
+            <img src="pictures/pic3.jpg" alt="Мария Сидорова">
+            <h3>Мария</h3>
+            <div class="specialty">Дизайн интерфейсов</div>
+            <p>Профессиональный UX/UI дизайнер. Обучает созданию красивых и удобных интерфейсов, работе с Figma и основам прототипирования.</p>
+        </div>
+        <div class="tutor-card">
+            <img src="pictures/pic4.jpg" alt="Дмитрий Кузнецов">
+            <h3>Дмитрий</h3>
+            <div class="specialty">ИИ</div>
+            <p>Специалист по искусственному интеллекту и машинному обучению. Преподает создание нейросетей и применение ИИ в реальных проектах.</p>
+        </div>
+        <div class="tutor-card">
+            <img src="pictures/pic5.jpg" alt="Екатерина Морозова">
+            <h3>Екатерина</h3>
+            <div class="specialty">Маркетинг и SMM</div>
+            <p>Эксперт по цифровому маркетингу. Обучает продвижению в соцсетях, контент-маркетингу и созданию эффективных рекламных кампаний.</p>
+        </div>
+        <div class="tutor-card">
+            <img src="pictures/pic6.jpg" alt="Алексей Смирнов">
+            <h3>Юрий</h3>
+            <div class="specialty">Frontend и React</div>
+            <p>Frontend-разработчик с опытом работы на крупных проектах. Преподает современные подходы к созданию веб-приложений с использованием React и JavaScript.</p>
+        </div>
+    </div>
+</main>
+<section class="email-block">
+    <div class="icon">📧</div>
+    <h3>Подпишись на полезные материалы</h3>
+    <p>Раз в неделю — короткие советы и бесплатные мини‑уроки.</p>
+
+    <div>
+        <input type="email" placeholder="Ваш email">
+        <button id="subscribe">Подписаться</button>
+    </div>
+
+    <p id="thanks">
+        Спасибо! Мы уже готовим письмо ✨
+    </p>
+</section>
+<footer>
+    © 2025 LearnHub — онлайн‑платформа обучения
+</footer>
+
+</body>
+</html>

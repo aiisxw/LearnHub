@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Контакты LearnHub | Телефон, адрес, бесплатная консультация</title>
+    <meta name="description" content="Контакты школы LearnHub: телефон, email и адрес офиса. График работы: с 9:00 до 21:00 без выходных. Бесплатная консультация по выбору курса. Ответим на все вопросы в течение 15 минут.">
+    <meta name="keywords" content="контакты it курсов, телефон школы программирования, адрес курсов python, как связаться с it школой, онлайн консультация курсов, офис курсов программирования, поддержка студентов, контакты для вопросов">
+
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <style>
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .contacts-info {
+            background: linear-gradient(500deg, #efe3f5, #ffffff);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 6px rgba(42, 40, 42, 0.07);
+        }
+        .blocks {
+            display: flex;          
+            gap: 40px;               
+            flex-wrap: wrap;         
+        }
+        .block1, .block2 {
+            flex: 1;                 
+            min-width: 200px;        
+        }
+        .contacts-info p {
+            margin: 8px 0;
+        }
+        .contacts-info a {
+            color: var( --text);
+            text-decoration: none;
+        }
+        .contacts-info a:hover {
+            color: var(--accent-dop);
+        }
+        .contact-form {
+            background: #ffffff;
+            padding: 25px;
+            padding-right: 50px;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+        }
+        .contact-form label {
+            display: block;
+            margin-top: 15px;
+            font-weight: 600;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 2px solid var(--accent);
+            border-radius: 8px;
+            outline: none;
+            font-size: 16px;
+        }
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        .contact-form button {
+            margin-top: 20px;
+            padding: 12px 20px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background: var(--accent-dark);
+        }
+        #thank {
+            display: none;
+            color: rgb(96, 156, 96);
+            margin-top: 15px;
+            font-weight: 600;
+        }
+        @media (max-width: 480px) {
+            main { padding: 0 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+   <a href="main.html" style="text-decoration: none; color: white; display: flex; align-items: center; gap: 10px; justify-content: center;">
+   <img src="pictures/logo.png" alt="Logo" style="width: 32px; height: 32px;">LearnHub</a>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="couses.html">Каталог курсов</a></li>
+        <li><a href="tutor.html">Преподаватели</a></li>
+        <li><a href="reviews.html">Отзывы</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div class="contacts-info">
+        <h1>Контакты</h1>
+        <div class="blocks">
+        <div class="block1">
+          <p>+375 (29) 771-23-03</p>
+          <p><a href="mailto:info@learnhub.com">info@learnhub.com</a></p>
+          <p><a href="https://yandex.by/maps/-/CLgBEP3P" target="_blank">г. Минск, ул. Леонида Левина, д. 13</a></p>
+          <p>Пн–Пт 9:00–21:00</p>
+        </div>
+        <div class="block2">
+          <p><a href="https://instagram.com/aiiskxwe" target="_blank">Instagram  &#8599;</a></p>
+          <p><a href="https://t.me/aiiskxwe" target="_blank">Telegram  &#8599;</a></p>
+          <p><a href="https://vk.com/aiiskxwe" target="_blank">VK  &#8599;</a></p>
+        </div>
+        </div>
+    </div>
+    <div class="contact-form">
+        <h3>Хочу на курсы! Свяжитесь со мной:</h3>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Имя" required>
+            <input type="tel" id="phone" placeholder="+375 (00) 000-00-00" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <button type="submit">Отправить</button>
+            <p id="thank">Спасибо! Мы свяжемся с вами в ближайшее время ✨</p>
+        </form>
+    </div>
+</main>
+<section class="email-block">
+    <div class="icon">📧</div>
+    <h3>Подпишись на полезные материалы</h3>
+    <p>Раз в неделю — короткие советы и бесплатные мини‑уроки.</p>
+
+    <div>
+        <input type="email" placeholder="Ваш email">
+        <button id="subscribe">Подписаться</button>
+    </div>
+
+    <p id="thanks">
+        Спасибо! Мы уже готовим письмо ✨
+    </p>
+</section>
+<footer>
+    © 2025 LearnHub — онлайн‑платформа обучения
+</footer>
+
+<script>
+$(document).ready(function(){
+
+    // Разрешаем вводить только цифры и +
+    $("#phone").on("input", function () {
+        this.value = this.value.replace(/[^\d+]/g, "");
+    });
+
+    $("#contactForm").submit(function(e){
+        e.preventDefault();
+
+        const name = $("#name").val().trim();
+        const phone = $("#phone").val().trim();
+        const email = $("#email").val().trim();
+
+        if(name === "" || phone === "" || email === "") {
+            alert("Пожалуйста, заполните все обязательные поля (Имя, Телефон, Email).");
+            return;
+        }
+
+        $("#thank").fadeIn();
+        setTimeout(() => $("#thank").fadeOut(), 4000);
+
+        $("#contactForm")[0].reset();
+    });
+
+});
+
+</script>
+
+</body>
+</html>

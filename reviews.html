@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Отзывы выпускников LearnHub | Реальные истории успеха в IT</title>
+    <meta name="description" content="Более 500 отзывов от выпускников LearnHub, которые уже работают в IT. Читайте реальные истории карьерного роста. Убедитесь в качестве нашего обучения.">
+    <meta name="keywords" content="отзывы о курсах программирования, выпускники it курсов отзывы, реальные истории успеха, отзывы о школе it, reviews курсов python, отзывы data science курс, отзывы веб разработка курс, отзывы smm курсы">
+
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <style>
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .reviews-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+        .review-card {
+            background: #ffffff;
+            flex: 1 1 300px;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s;
+        }
+        .review-card:hover {
+            transform: translateY(-5px);
+        }
+        .review-card h4 {
+            margin: 0;
+            color: var(--accent-dark);
+            font-size: 20px;
+        }
+        .review-card .course {
+            font-weight: 600;
+            margin-top: 5px;
+            color: var(--accent2);
+        }
+        .review-card .stars {
+            color: gold;
+            margin-top: 5px;
+        }
+        .review-card p {
+            margin-top: 10px;
+            line-height: 1.5;
+            color: var(--text);
+        }
+
+        @media (max-width: 480px) {
+            main { padding: 0 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+   <a href="main.html" style="text-decoration: none; color: white; display: flex; align-items: center; gap: 10px; justify-content: center;">
+        <img src="pictures/logo.png" alt="Logo" style="width: 32px; height: 32px;">LearnHub</a>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="couses.html">Каталог курсов</a></li>
+        <li><a href="tutor.html">Преподаватели</a></li>
+        <li><a href="reviews.html">Отзывы</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div class="block-text">
+        <h1>Отзывы наших студентов</h1>
+        <p>За 8 лет работы наши курсы помогли тысячам людей получить ключевые навыки и изменить свою жизнь. Вот что говорят наши выпускники:</p>
+    </div>
+    <div class="reviews-container">
+        <div class="review-card">
+            <h4>Анна К.</h4>
+            <div class="course">Python для начинающих</div>
+            <div class="stars">★★★★★</div>
+            <p>Курс отличный! Все объясняется понятно, много практических заданий. Благодаря этому курсу я смогла создать свои первые проекты на Python.</p>
+        </div>
+        <div class="review-card">
+            <h4>Иван П.</h4>
+            <div class="course">Веб-разработка</div>
+            <div class="stars">★★★★☆</div>
+            <p>Очень понравилось обучение веб-разработке. Практика занимает большую часть времени, что помогает реально закрепить знания. Хотелось бы чуть больше примеров современных фреймворков.</p>
+        </div>
+        <div class="review-card">
+            <h4>Мария С.</h4>
+            <div class="course">Data Science</div>
+            <div class="stars">★★★★★</div>
+            <p>Курс по Data Science просто супер! Научилась анализировать данные, строить графики и делать прогнозы. Отличная подача материала и поддержка преподавателя.</p>
+        </div>
+        <div class="review-card">
+            <h4>Дмитрий Л.</h4>
+            <div class="course">Дизайн интерфейсов</div>
+            <div class="stars">★★★★★</div>
+            <p>Очень полезный курс по UX/UI. Много практических заданий, научился создавать красивые и удобные интерфейсы. Рекомендую всем, кто хочет заниматься дизайном.</p>
+        </div>
+        <div class="review-card">
+            <h4>Екатерина М.</h4>
+            <div class="course">ИИ</div>
+            <div class="stars">★★★★☆</div>
+            <p>Курс по искусственному интеллекту интересный и практичный. Научилась создавать нейросети и применять их на реальных проектах. Хотелось бы чуть больше времени на практику.</p>
+        </div>
+    </div>
+</main>
+<section class="email-block">
+    <div class="icon">📧</div>
+    <h3>Подпишись на полезные материалы</h3>
+    <p>Раз в неделю — короткие советы и бесплатные мини‑уроки.</p>
+
+    <div>
+        <input type="email" placeholder="Ваш email">
+        <button id="subscribe">Подписаться</button>
+    </div>
+
+    <p id="thanks">
+        Спасибо! Мы уже готовим письмо ✨
+    </p>
+</section>
+<footer>
+    © 2025 LearnHub — онлайн‑платформа обучения
+</footer>
+
+</body>
+</html>

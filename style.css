@@ -1,0 +1,191 @@
+ :root {
+            --bg: #f8f8f8;          
+            --card: #ffffff;        
+            --accent: #4682B4;      
+            --accent-dark: #1E3A5F; 
+            --accent2: #87CEEB;
+            --accent3: #9370DB;
+            --accent-dop: #FF69B4;
+            --text: #2f2f2f;        
+            --muted: #6f6f6f;       
+            --header1: #D8BFD8;
+            --header2: #ADD8E6;
+            --footer: #ebebeb;
+          }
+
+        html {
+            overflow-y: scroll;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Inter", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(45deg, var(--header2), var(--header1));
+            padding: 20px 0;
+            text-align: center;
+            font-size: 28px;
+            font-weight: 700;
+            color: white;
+        }
+
+        /* NAV */
+        nav {
+            background: var(--card);
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 600;
+        }
+        nav a:hover {
+             color: var(--accent3); 
+        }
+
+        /* INTRO */
+        .intro {
+            display: flex;
+            gap: 25px;
+            padding: 35px 20px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .intro .pic {
+            width: 140px;
+            height: 140px;
+            border-radius: 12px;
+        }
+        .intro-text h2 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .intro-text p {
+            max-width: 350px;
+            line-height: 1.5;
+            color: var(--muted);
+        }
+
+        /* SLIDER */
+        .advantages-intro {
+            width: 90%;
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        .advantages-intro h2 {
+            font-size: 26px;
+            margin-bottom: 10px;
+            color: var(--header);
+        }
+        .advantages-intro p {
+            color: var(--muted);
+            font-size: 16px;
+        }
+        .slider-block {
+            margin: 30px auto;
+            padding: 20px;
+            background: var(--card);
+            width: 90%;
+            max-width: 600px;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .slider { width: 100%; text-align: center; }
+        .slide { display: none; font-size: 20px; }
+        .slide.active { display: block; }
+        .prev, .next {
+            background: none;
+            border: none;
+            font-size: 32px;
+            cursor: pointer;
+            color: var(--accent-dark);
+        }
+
+        /* EMAIL BLOCK */
+        .email-block {
+            background: var(--card);
+            margin: 25px;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+        }
+        .email-block .icon {
+            font-size: 48px;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+        .email-block input {
+            padding: 12px;
+            width: 220px;
+            border-radius: 8px;
+            border: 2px solid var(--accent);
+            outline: none;
+        }
+        .email-block button {
+            padding: 12px 20px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-left: 10px;
+            margin-top: 15px
+        }
+        .email-block button:hover { 
+            background: var(--accent-dark); 
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--footer);
+            color: var(--muted);
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 480px) {
+            nav ul { flex-direction: column; }
+            .email-block input {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .email-block button { margin-left: 0; width: 100%; }
+        }
+
+        .block-text {
+            background: linear-gradient(500deg, #efe3f5, #ffffff);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 6px rgba(42, 40, 42, 0.07);
+        }
+        #thanks {
+            display:none; 
+            color: rgb(96, 156, 96); 
+            margin-top: 10px; 
+            font-weight: 600;
+        }

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Каталог курсов LearnHub 2025 | 6 IT-направлений с программами</title>
+    <meta name="description" content="Выберите курс в LearnHub: Веб-разработка (HTML/CSS/JS), Python для начинающих, Data Science на Python, Дизайн интерфейсов (Figma), Маркетинг и SMM, Искусственный интеллект. Подробные программы, сроки, стоимость обучения.">
+    <meta name="keywords" content="каталог it курсов 2024, курсы программирования цены, программа обучения python, data science курс стоимость, веб разработка обучение цена, дизайн интерфейсов курс, smm обучение стоимость, искусственный интеллект обучение цена">
+
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <style>
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .courses-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+        .course-card {
+            background: #ffffff;
+            flex: 1 1 300px;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s;
+        }
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+        .course-card h3 {
+            margin-top: 0;
+            color: var(--accent);
+            font-size: 22px;
+        }
+        .course-card p {
+            color: var(--text);
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 480px) {
+            main { 
+                padding: 0 10px; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="main.html" style="text-decoration: none; color: white; display: flex; align-items: center; gap: 10px; justify-content: center;">
+        <img src="pictures/logo.png" alt="Logo" style="width: 32px; height: 32px;">LearnHub</a>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="couses.html">Каталог курсов</a></li>
+        <li><a href="tutor.html">Преподаватели</a></li>
+        <li><a href="reviews.html">Отзывы</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div class="block-text">
+        <h1>Каталог курсов</h1>
+        <p>За 8 лет мы выпустили более 12 000 айтишников, которые успешно начали свой путь в международных IT компаниях.</p>
+    </div>
+    <div class="courses-container">
+        <div class="course-card">
+            <h3>Веб-разработка</h3>
+            <p>На этом курсе вы изучите основы веб-разработки: HTML, CSS и JavaScript. Вы научитесь создавать адаптивные сайты, работать с современными фреймворками и подключать интерактивные элементы. Курс включает множество практических проектов и мини-сайтов для закрепления знаний.</p>
+        </div>
+        <div class="course-card">
+            <h3>Python для начинающих</h3>
+            <p>Этот курс поможет вам освоить Python с нуля. Вы научитесь писать программы, работать с данными, создавать простые игры и проекты. Материал подается доступно и с большим количеством практических заданий, чтобы сразу применять изученное на практике.</p>
+        </div>
+        <div class="course-card">
+            <h3>Data Science</h3>
+            <p>На курсе по Data Science вы научитесь собирать, обрабатывать и анализировать данные с помощью Python. Освоите библиотеки для анализа данных, визуализации и построения прогнозов. Курс включает реальные кейсы и проекты, чтобы развить аналитическое мышление.</p>
+        </div>
+        <div class="course-card">
+            <h3>Дизайн интерфейсов</h3>
+            <p>Этот курс посвящен созданию красивых и удобных интерфейсов. Вы изучите Figma, принципы UX/UI дизайна, работу с цветом и типографикой. Практическая часть включает разработку макетов и прототипов для реальных проектов.</p>
+        </div>
+        <div class="course-card">
+            <h3>Маркетинг и SMM</h3>
+            <p>Курс по маркетингу и SMM поможет вам освоить продвижение в социальных сетях, контент-маркетинг и стратегии роста. Вы научитесь создавать рекламные кампании, анализировать эффективность продвижения и применять инструменты для развития бренда.</p>
+        </div>
+        <div class="course-card">
+            <h3>Искусственный интеллект (ИИ)</h3>
+            <p>На этом курсе вы познакомитесь с основами искусственного интеллекта и машинного обучения. Вы научитесь создавать простые нейросети, работать с популярными библиотеками Python для ИИ и применять алгоритмы на практических задачах. Курс включает создание проектов, где можно применять ИИ в реальных сценариях, например, генерация текста, распознавание изображений и автоматизация процессов.</p>
+        </div>
+    </div>
+</main>
+<section class="email-block">
+    <div class="icon">📧</div>
+    <h3>Подпишись на полезные материалы</h3>
+    <p>Раз в неделю — короткие советы и бесплатные мини‑уроки.</p>
+
+    <div>
+        <input type="email" placeholder="Ваш email">
+        <button id="subscribe">Подписаться</button>
+    </div>
+
+    <p id="thanks">
+        Спасибо! Мы уже готовим письмо ✨
+    </p>
+</section>
+<footer>
+    © 2025 LearnHub — онлайн‑платформа обучения
+</footer>
+
+</body>
+</html>
